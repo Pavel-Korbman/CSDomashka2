@@ -26,7 +26,7 @@ else
 
 while (count < 2)
 {
-number = number - (number / digitNumber * digitNumber);
+number = number % digitNumber;
 digitNumber = digitNumber / 10;
 count = count + 1;
 }
