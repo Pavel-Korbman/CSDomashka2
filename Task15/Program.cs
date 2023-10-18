@@ -4,6 +4,17 @@
 // 7 -> да
 // 1 -> нет
 
+ void week(int number)
+{
+if (number == 6 || number == 7)
+  {
+    Console.WriteLine("да");
+  }
+  else
+  {
+    Console.WriteLine("нет");
+  } 
+}
 Console.WriteLine("Введите число, обозначающее день недели");
 int number = Convert.ToInt32 (Console.ReadLine());
 
@@ -13,12 +24,5 @@ if (number < 1 || number > 7)
 }
 else
 {
-  if (number == 6 || number == 7)
-  {
-    Console.WriteLine("да"); 
-  }  
-  else
-  {
-    Console.WriteLine("нет");
-  } 
+week(number);
 }
