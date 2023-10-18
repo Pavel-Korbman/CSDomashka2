@@ -12,6 +12,6 @@ if (number < 100 || number > 999)
 }
 else
 {
-       int result = (number - (number / 100 * 100)) / 10;
+       int result =  (number % 100) / 10;
        Console.WriteLine(result);
 }
